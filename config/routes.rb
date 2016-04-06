@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :topics
+  root 'topics#index'
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,7 +18,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
-  #   resources :products do
+  #   resources :products do        
   #     member do
   #       get 'short'
   #       post 'toggle'
@@ -54,4 +56,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
