@@ -1,7 +1,7 @@
+<center>
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
+ <p>
+  <h1><strong>Title:</strong></h1>
   <%= @topic.title %>
 </p>
 <%= image_tag @topic.image.url(:medium) %>
@@ -12,3 +12,4 @@
 
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>
+</center>
